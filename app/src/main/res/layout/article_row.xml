@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="0dp"
+    android:backgroundTint="@color/colorNon"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/cardView">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="#FFF"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/imageViewImage"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            tools:src="@drawable/background_tools"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewImageBackground"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/content_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ranapplications.ranlibrary.NewTextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:maxLines="2"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewImageBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Title\ntrrtrttr" />
+
+        <com.ranapplications.ranlibrary.NewCircleImageView
+            android:id="@+id/imageViewCircle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            tools:src="#D65D5D"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewImageBackground" />
+
+        <com.ranapplications.ranlibrary.NewTextViewBoldText
+            android:id="@+id/textViewSourceOneLetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewCircle"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewCircle"
+            app:layout_constraintStart_toStartOf="@+id/imageViewCircle"
+            app:layout_constraintTop_toTopOf="@+id/imageViewCircle"
+            tools:ignore="SpUsage"
+            tools:text="T" />
+
+        <com.ranapplications.ranlibrary.NewTextView
+            android:id="@+id/textViewSource"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="1"
+            android:textAlignment="viewStart"
+            android:textColor="#1E1E1E"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewOptions"
+            app:layout_constraintStart_toEndOf="@+id/imageViewCircle"
+            app:layout_constraintTop_toTopOf="@+id/imageViewCircle"
+            tools:text="Source" />
+
+        <com.ranapplications.ranlibrary.NewTextViewLight
+            android:id="@+id/textViewPublishedAt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="1"
+            android:textAlignment="viewStart"
+            android:textColor="#1E1E1E"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewCircle"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewOptions"
+            app:layout_constraintStart_toEndOf="@+id/imageViewCircle"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSource"
+            tools:text="Published at" />
+
+
+        <ImageView
+            android:id="@+id/imageViewOptions"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:padding="10dp"
+            android:src="@drawable/options_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewImageBackground" />
+
+        <com.ranapplications.ranlibrary.NewTextViewLight
+            android:id="@+id/textViewDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/textColorNew"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPublishedAt"
+            tools:text="Bla Bla\nBla\nBla\n\n\n\n" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
